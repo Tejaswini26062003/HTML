@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form tags</h1>
+    <!-- 
+    The tags or elements of the form
+        input tag -various types of input elements
+        label tag  - to add label to the input
+        textarea tag- multilinetext
+        select tag  - dropdown input
+        fieldset tag - draw a border line around the form
+        legendtag   -to add title by breaking the fieldset
+        
+    The attributes
+       action -in action specify the actoin part or server path
+       method- decides the type of input being sent to the server
+             -get -prints the data in the address bar
+             - post- hides the dat
+        autocomplete- (on)accept the cached history of broweser,(off)won't accept the cached history
+       enctype- application/x-www-form-urlencoded
+                multipart/form-data-select only when you have input type files -->
+    
+     <form action="" enctype="application/x-www-form-urlencoded" autocomplete="off" method="post">
+        <fieldset>
+            <legend>Login form</legend>
+            <label for="user">Your user name</label>
+            <input type="text" name="name" id="user" placeholder="Enter ur name"  value="user@gmail.com" readonly required >
+            <br><br>
+
+            <label for="pass">Your password</label>
+            <input type="password" name="pass" id="pass" placeholder="min 6 and max 12" ninlength="6" maxlength="12">
+
+            <br><br>
+            <input type="submit" value="login">
+            <input type="reset" value="clear">
+        </fieldset>
+     </form>
+    <!-- 
+     input attributes
+     type- decides the type of input tag
+           (text,number,radio,checkbox,file,date,datetime,datetime-local,time,month,week,color.search,tel,submit,reset,password,email,hidden)
+     name - mandatory for all inputs(field name)
+     id- selector property
+     placeholder - hint for user
+     required - mandatory to fill the form
+     value -default value
+     readonly -restrict the write operation for user
+     disable - disable the input
+     minlength - minimum input length
+     maxlength - maximum input length
+     min- minimum for  number
+     max- maximum for number
+     -->
+</body>
+</html>
