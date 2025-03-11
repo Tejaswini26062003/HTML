@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #canv {
+            border:2px solid black;
+            width:400px;
+            height:400px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas tag</h1>
+    <canvas id="canv"></canvas>
+    <script>
+        let canv=document.getElementById("canv");        
+        let context=canv.getContext("2d");  
+        context.fillStyle="slateblue"// to fill color
+           // context.fillStyle="orange"  //
+            //context.fillRect(50,50,100,50) ;//to crate a resctangular shape 
+           // context.strokeRect(0,0,100,50)//to crate a resctangular shape border
+           context.font="32px san-serif"  //to apply yhe font style and size
+           //context.strokeText("Welcome to html",30,30)// to dispaly text outline
+           context.fillText("Welcome to html",30,30) //to dispaly color text
+
+    </script>
+
+</body>
+</html>
